@@ -17,8 +17,12 @@ class ProductsController < ApplicationController
       description: params[:description],
       supplier_id: params[:supplier_id],
     )
-    @product.save
-    render :show
+    if @product.save
+      render :show
+    else
+      render json: {errors: @product.errors.full_messages}, status:unprocessable_entity
+    end
+    
   end
 
   def update
