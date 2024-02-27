@@ -18,11 +18,14 @@ class ProductsController < ApplicationController
       supplier_id: params[:supplier_id],
     )
     if @product.save
+      Image.create(
+        url: params[:image],
+        product_id: @product.id
+      )
       render :show
     else
-      render json: {errors: @product.errors.full_messages}, status:unprocessable_entity
+      render json: {errors: @product.errors.full_messages}, status: :unprocessable_entity
     end
-    
   end
 
   def update
