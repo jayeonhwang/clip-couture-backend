@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
     @product = Product.find_by(id:params[:id])
     render :show
   end
-
+  
   def create
     @product = Product.new(
       name: params[:name],
@@ -18,10 +18,12 @@ class ProductsController < ApplicationController
       supplier_id: params[:supplier_id],
     )
     if @product.save
-      Image.create(
-        url: params[:image],
-        product_id: @product.id
-      )
+      params[:images].each do |image|
+        Image.create(
+          url:image,
+          product_id: @product.id
+        )
+      end
       render :show
     else
       render json: {errors: @product.errors.full_messages}, status: :unprocessable_entity
