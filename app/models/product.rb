@@ -8,6 +8,8 @@ class Product < ApplicationRecord
 
   has_many :images
   has_many :categoryproducts
+  has_many :categories through: :categoryproducts
   belongs_to :supplier
+
 end
 
