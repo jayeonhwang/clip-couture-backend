@@ -11,11 +11,12 @@ class ProductsController < ApplicationController
   end
   
   def create
+    supplier = Supplier.find_by(name: params[:supplier])
     @product = Product.new(
       name: params[:name],
       price: params[:price],
       description: params[:description],
-      supplier_id: params[:supplier_id],
+      supplier_id: supplier.id
     )
     if @product.save
       params[:images].each do |image|
