@@ -10,4 +10,5 @@ class Product < ApplicationRecord
   has_many :categoryproducts
   has_many :categories, through: :categoryproducts
   belongs_to :supplier
+  
 end
