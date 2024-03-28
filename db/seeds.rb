@@ -23,4 +23,39 @@ User.create!(
   admin: false
 )
 
+Category.create!(
+  name: "Claw clips"
+)
+Category.create!(
+  name: "Scrunchies"
+)
+Category.create!(
+  name: "Headbands"
+)
+Category.create!(
+  name: "Hair pins"
+)
+Category.create!(
+  name: "Hair ties"
+)
 
+Supplier.create!(
+  name: "EMI JAY",
+  phone_number: "(111)123-4567",
+  email:"emijay@email.com"
+)
+Supplier.create!(
+  name: "Chunks",
+  phone_number: "(111)123-1234",
+  email:"chunks@email.com"
+)
+Supplier.create!(
+  name: "Cou Cou Suzette",
+  phone_number: "(567)123-4567",
+  email:"BaysideBrush@email.com"
+)
+Supplier.create!(
+  name: "Slip",
+  phone_number: "(111)123-4567",
+  email:"slip@email.com"
+)
