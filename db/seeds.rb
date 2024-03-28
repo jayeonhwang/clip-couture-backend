@@ -50,7 +50,3 @@ Image.create!([
  
 ])
 
-Categoryproduct.create!([
-  {product_id: 1, category_id: 7}
-])
-
