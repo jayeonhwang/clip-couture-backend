@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: clip_couture_backend_production
   username: clip_couture_backend
   password: <%= ENV["CLIP_COUTURE_BACKEND_DATABASE_PASSWORD"] %>
