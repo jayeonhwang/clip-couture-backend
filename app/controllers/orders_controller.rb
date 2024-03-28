@@ -1,9 +1,8 @@
-class OrderController < ApplicationController
+class OrdersController < ApplicationController
   before_action :authenticate_user
-  
   def index  
     @orders = current_user.orders
-    render :index    
+    render :index 
   end
   
   def show
@@ -40,5 +39,4 @@ class OrderController < ApplicationController
     end
     render :show
   end
-
 end
