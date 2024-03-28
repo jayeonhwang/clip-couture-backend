@@ -6,6 +6,11 @@ before_action :authenticate_admin, except: [:show, :index]
     render :index
   end
 
+  def categoryindex
+    @product = Product.find_by(supplier_id:params[:id])
+    render :show
+  end
+
   def show
     @product = Product.find_by(id:params[:id])
     render :show
@@ -13,6 +18,8 @@ before_action :authenticate_admin, except: [:show, :index]
   
   def create
     supplier = Supplier.find_by(name: params[:supplier])
+    category = Category.find_by(name: params[:category])
+
     @product = Product.new(
       name: params[:name],
       price: params[:price],
@@ -26,6 +33,12 @@ before_action :authenticate_admin, except: [:show, :index]
           product_id: @product.id
         )
       end
+      
+      Categoryproduct.create(
+        product_id:@product_id,
+        category_id:category.id
+      )
+
       render :show
     else
       render json: {errors: @product.errors.full_messages}, status: :unprocessable_entity
