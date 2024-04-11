@@ -6,10 +6,6 @@ before_action :authenticate_admin, except: [:show, :index]
     render :index
   end
 
-  def categoryindex
-    @product = Product.find_by(supplier_id:params[:id])
-    render :show
-  end
 
   def show
     @product = Product.find_by(id:params[:id])

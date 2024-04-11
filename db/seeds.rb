@@ -1,3 +1,15 @@
+# User.create!([
+#   {name: "Jayeon", email: "jay@email.com", password_digest: "$2a$12$E3DcoKghzVgp8L6YYhD7neThI3PSgDerMfQHqoMakkiKFWmHhmDHm", admin: false},
+#   {name: "admin", email: "admin@email.com", password_digest: "$2a$12$Q2UYenZPP7jKkaEw3azpAOUyVVXkcWhCIZS/2JmeRYNO5QqfqIR0.", admin: true},
+#   {name: "user1", email: "user1@email.com", password_digest: "$2a$12$NQvX7pQeHr0t8PhoGKPkVuDKp1WNBBNN9Qqc3TR6OB5KTBTgpMcOm", admin: false}
+# ])
+
+# Supplier.create!([
+#   {name: "Chunks", phone_number: "(111)111-1235", email: "chunks@email.com"},
+#   {name: "Cou Cou Suzette", phone_number: "(111)123-456", email: "coucou@email.com"},
+#   {name: "Bayside Brush", phone_number: "(134)143-7896", email: "bayside@email.com"},
+#   {name: "Slip", phone_number: "(679)865-1238", email: "slip@email.com"}
+# ])
 
 Product.create!([
   {name: "KNOTTED HAIR TIES 3-PACK", price: "6.0", description: "3 Elastic Hair Ties (5/8\" Wide) Color: Choose from 23 colors Handmade in Los Angeles", supplier_id: 1},
@@ -46,7 +58,20 @@ Image.create!([
   {url: "https://chunks.shop/cdn/shop/files/HairTie-Bobble-StripeRed-BlueNude-gold-WBG-web-1_1280x.jpg?v=1684189822", product_id: 12},
   {url: "https://chunks.shop/cdn/shop/files/bobbles8_1280x.jpg?v=1688092194", product_id: 12},
   {url: "https://chunks.shop/cdn/shop/files/Bobbleties12_1280x.jpg?v=1688092194", product_id: 12},
-  {url: "https://coucousuzette.com/cdn/shop/products/4216.jpg?v=1704467667&width=1346", product_id: 13},
- 
+  {url: "https://coucousuzette.com/cdn/shop/products/4216.jpg?v=1704467667&width=1346", product_id: 13}
+])
+
+Categoryproduct.create!([
+  {product_id: 1, category_id: 7}
+])
+
+Category.create!([
+  {name: "Scrunchies"},
+  {name: "Hair Pins"},
+  {name: "Bows"},
+  {name: "Barrettes"},
+  {name: "Headbands"},
+  {name: "Hair ties"},
+  {name: "Claw clips"}
 ])
 
