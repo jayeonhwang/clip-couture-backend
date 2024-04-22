@@ -118,7 +118,7 @@ Category.create!([
   {name: "Claw clips"}
 ])
 
-Categoryproduct.create!([
+CategoryProduct.create!([
   {product_id: 1, category_id: 7},
   {product_id: 1, category_id: 2},
   {product_id: 2, category_id: 3},
