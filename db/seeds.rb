@@ -1,16 +1,15 @@
-# User.create!([
-#   {name: "Jayeon", email: "jay@email.com", password_digest: "$2a$12$E3DcoKghzVgp8L6YYhD7neThI3PSgDerMfQHqoMakkiKFWmHhmDHm", admin: false},
-#   {name: "admin", email: "admin@email.com", password_digest: "$2a$12$Q2UYenZPP7jKkaEw3azpAOUyVVXkcWhCIZS/2JmeRYNO5QqfqIR0.", admin: true},
-#   {name: "user1", email: "user1@email.com", password_digest: "$2a$12$NQvX7pQeHr0t8PhoGKPkVuDKp1WNBBNN9Qqc3TR6OB5KTBTgpMcOm", admin: false}
-# ])
-
-# Supplier.create!([
-#   {name: "Chunks", phone_number: "(111)111-1235", email: "chunks@email.com"},
-#   {name: "Cou Cou Suzette", phone_number: "(111)123-456", email: "coucou@email.com"},
-#   {name: "Bayside Brush", phone_number: "(134)143-7896", email: "bayside@email.com"},
-#   {name: "Slip", phone_number: "(679)865-1238", email: "slip@email.com"}
-# ])
-
+User.create!([
+  {name: "Jayeon", email: "jay@email.com", password_digest: "$2a$12$E3DcoKghzVgp8L6YYhD7neThI3PSgDerMfQHqoMakkiKFWmHhmDHm", admin: false},
+  {name: "admin", email: "admin@email.com", password_digest: "$2a$12$Q2UYenZPP7jKkaEw3azpAOUyVVXkcWhCIZS/2JmeRYNO5QqfqIR0.", admin: true},
+  {name: "user1", email: "user1@email.com", password_digest: "$2a$12$NQvX7pQeHr0t8PhoGKPkVuDKp1WNBBNN9Qqc3TR6OB5KTBTgpMcOm", admin: false}
+])
+Supplier.create!([
+  {name: "EMI JAY", phone_number: "(111)111-1234", email: "emijay@email.com"},
+  {name: "Chunks", phone_number: "(111)111-1235", email: "chunks@email.com"},
+  {name: "Cou Cou Suzette", phone_number: "(111)123-456", email: "coucou@email.com"},
+  {name: "Bayside Brush", phone_number: "(134)143-7896", email: "bayside@email.com"},
+  {name: "Slip", phone_number: "(679)865-1238", email: "slip@email.com"}
+])
 Product.create!([
   {name: "KNOTTED HAIR TIES 3-PACK", price: "6.0", description: "3 Elastic Hair Ties (5/8\" Wide) Color: Choose from 23 colors Handmade in Los Angeles", supplier_id: 1},
   {name: "Pick Comb", price: "18.0", description: "Measures ~4.5\" long and 2.5\" wide  Made from cellulose acetate Proudly and responsibly made in Jinhua, China", supplier_id: 2},
@@ -25,6 +24,25 @@ Product.create!([
   {name: "Juno Claw in Black + Chartreuse", price: "15.0", description: "This small-ish sized hair claw is recommended for all hair types and textures. Perfect for fine hair buns and thicker hair half-updos!", supplier_id: 2},
   {name: "Bobble Ties in Memphis", price: "20.0", description: "Accent your ponytail or braids with these bobble ties of your dreams.", supplier_id: 2},
   {name: " EYE HAIR CLAW - BLUE", price: "14.0", description: "The Blue Eye, the favorite Coucou Suzette symbol to pimp your outfit of the day and secure your hair in two seconds!", supplier_id: 3},
+  {name: "MUSSEL HAIR CLAW", price: "14.0", description: "The perfect hair accessory: original, fun and medium-sized: to tie up those few cheeky strands in two minutes, or to tie up your hair in a pretty woman's bun that runs her life like clockwork!", supplier_id: 3},
+  {name: "CLOWNFISH HAIR CLAW", price: "15.0", description: "CLOWNFISH HAIR CLAW", supplier_id: 3},
+  {name: "BOW BARRETTE IN ICONIC VELVET", price: "19.0", description: "Color: Iconic Velvet\nDimensions: 4\" x 1\" x 8”", supplier_id: 1},
+  {name: "BLACK KNOT HEADBAND", price: "39.0", description: "Black knot headband | One-size | Lightweight front knot design | Made with 100% slipsilk™ | Specially selected elastic with a slipsilk™ covering.", supplier_id: 5},
+  {name: "POSITANO LARGE SCRUNCHIES", price: "29.25", description: "Made with slipsilk™ to be gentle on your delicate hair. 100% silk (exclusive of elastic).", supplier_id: 5},
+  {name: "CHELSEA HOLIDAY ORNAMENT", price: "18.75", description: "UPGRADE YOUR HAIR TIE GAME.", supplier_id: 5},
+  {name: "Camila Paris Hair Bun Covers - CP16 - Tortoiseshell", price: "13.95", description: "The Bun Holder Hair Slide is a fashionable and functional hair accessory that is perfect for creating easy hairstyles and holding your hair securely in place. ", supplier_id: 4},
+  {name: "Camila Paris Hair Clips Victoria Classic", price: "15.95", description: "CP3346 - 2.5 Inch - Blue", supplier_id: 4},
+  {name: "Camila Paris Hair Banana Clips Interlocking Ponytail", price: "9.99", description: "Made in France. Never have a bad hair day. Great small curved good grip side combs clamps for ladies, perfect for a woman who loves to create or make new hairstyles, for a party, formal occasions, and daily life. For all hair types. Effortless beauty, quick and easy styling solution for any occasion.", supplier_id: 4},
+  {name: "Camila Paris Hair Clips Mini Elizabeth Pair", price: "9.99", description: "CP2608-2 - Tokyo", supplier_id: 4},
+  {name: "Camila Paris Hair Barrettes Twist ", price: "9.99", description: "Made in France. Never have a bad hair day. Hair fashion beauty accessory for women. Ladies barrette clamps with super strong closure for thick or fine,", supplier_id: 4},
+  {name: "SWEETHEART CLIP IN MAUVE BLOOM", price: "34.0", description: "Color: Mauve Bloom Width: 3\" Claw Clip Custom biodegradable acetate", supplier_id: 1},
+  {name: "CLOUD HEADBAND IN SWEET LIKE HONEY", price: "16.0", description: "Color: Sweet Like Honey 100% Elastic Microfiber", supplier_id: 1},
+  {name: "PONYTAIL HOLDER SET OF 4 IN BABY ROSETTE", price: "14.0", description: "Color: Baby Rosette 2” Diameter Hair Tie Rosette Flower: ½ x ½” Elastic Band and Polyester", supplier_id: 1},
+  {name: "BOBBLE HAIR TIE IN CITRUS FLOWER", price: "16.0", description: "Color: Citrus Flower Measurements: 3” x  ½” x 2” Big Flower : 1 ¼” x 1 ¼” | Small Flower: 1” x 1” Elastic and cellulose acetate", supplier_id: 1},
+  {name: "SWEETHEART CLIP IN BLUE ANGEL WINGS", price: "34.0", description: "Color: Blue Angel Wings Width: 3\" Claw Clip Custom biodegradable acetate Copyrighted Design", supplier_id: 1},
+  {name: "SIAMESE CAT HAIR CLAW", price: "14.0", description: "Each creation is unique, the color can slightly vary depending on the piece of acetate used", supplier_id: 3},
+  {name: "BLACK CAT HAIR CLAW", price: "14.0", description: "Each creation is unique, the color can slightly vary depending on the piece of acetate used", supplier_id: 3},
+  {name: "GREY CAT HAIR CLAW", price: "14.0", description: "Each creation is unique, the color can slightly vary depending on the piece of acetate used", supplier_id: 3}
 ])
 
 Image.create!([
@@ -58,11 +76,36 @@ Image.create!([
   {url: "https://chunks.shop/cdn/shop/files/HairTie-Bobble-StripeRed-BlueNude-gold-WBG-web-1_1280x.jpg?v=1684189822", product_id: 12},
   {url: "https://chunks.shop/cdn/shop/files/bobbles8_1280x.jpg?v=1688092194", product_id: 12},
   {url: "https://chunks.shop/cdn/shop/files/Bobbleties12_1280x.jpg?v=1688092194", product_id: 12},
-  {url: "https://coucousuzette.com/cdn/shop/products/4216.jpg?v=1704467667&width=1346", product_id: 13}
-])
-
-Categoryproduct.create!([
-  {product_id: 1, category_id: 7}
+  {url: "https://coucousuzette.com/cdn/shop/products/4216.jpg?v=1704467667&width=1346", product_id: 13},
+  {url: "https://coucousuzette.com/cdn/shop/products/4842.jpg?v=1702474220&width=1426", product_id: 14},
+  {url: "https://www.emijay.com/cdn/shop/files/bowbarretteiniconicvelvet_1080x.jpg?v=1699071515", product_id: 15},
+  {url: "https://coucousuzette.com/cdn/shop/products/8479.jpg?v=1700736997", product_id: 16},
+  {url: "https://coucousuzette.com/cdn/shop/products/4842.jpg?v=1702474220&width=1426", product_id: 17},
+  {url: "https://www.slip.com/cdn/shop/products/SLIP_Knot_Headband_Blacl_ShotA.jpg?v=1616458825&width=1440", product_id: 19},
+  {url: "https://www.slip.com/cdn/shop/products/SLIP_Knot_Headband_Blacl_ShotB.jpg?v=1616458826&width=1440", product_id: 19},
+  {url: "https://www.slip.com/cdn/shop/products/SLIP_S23_LARGESET_POSITANO_SHOT1.jpg?v=1679880732&width=1440", product_id: 20},
+  {url: "https://www.slip.com/cdn/shop/products/SLIP_S23_LARGESET_POSITANO_SHOT1.jpg?v=1679880732&width=1440", product_id: 20},
+  {url: "https://www.slip.com/cdn/shop/files/SLIP_ORNAMENT_MAYFAIR_SHOT2.jpg?v=1705647409&width=1440", product_id: 21},
+  {url: "https://www.slip.com/cdn/shop/files/SLIP_ORNAMENT_CHELSEA_SHOT2.jpg?v=1704488600&width=1440", product_id: 21},
+  {url: "https://baysidebrushco.com/cdn/shop/products/CP16D_5000x.jpg?v=1680619712", product_id: 22},
+  {url: "https://baysidebrushco.com/cdn/shop/products/CP3346_1_5000x.jpg?v=1646430358", product_id: 23},
+  {url: "https://baysidebrushco.com/cdn/shop/files/MP78_2e28df4f-0708-44b1-8d3e-1498f31c561a_5000x.jpg?v=1711379740", product_id: 24},
+  {url: "https://baysidebrushco.com/cdn/shop/files/MP78-1_5000x.jpg?v=1711379740", product_id: 24},
+  {url: "https://baysidebrushco.com/cdn/shop/products/CP2608A_5000x.jpg?v=1650985064", product_id: 25},
+  {url: "https://baysidebrushco.com/cdn/shop/products/CP2608B_5000x.jpg?v=1650985064", product_id: 25},
+  {url: "https://baysidebrushco.com/cdn/shop/products/CP2427A_5000x.jpg?v=1680624179", product_id: 26},
+  {url: "https://baysidebrushco.com/cdn/shop/products/CP2427E_5000x.jpg?v=1680624179", product_id: 26},
+  {url: "https://www.emijay.com/cdn/shop/files/sweetheartclipinmauvebloom_1c3ab7c5-8ce4-4e9f-a46f-b8ebdb4a416d.jpg?v=1712088245&width=800", product_id: 27},
+  {url: "https://www.emijay.com/cdn/shop/files/SweetDreamsSilkScrunchieinRoseTan2_2fece384-6872-4fa7-82b5-aad3c97434ed.jpg?v=1712088245&width=800", product_id: 27},
+  {url: "https://www.emijay.com/cdn/shop/files/cloudheadbandinsweetlikehoney.jpg?v=1711496937&width=800", product_id: 28},
+  {url: "https://www.emijay.com/cdn/shop/files/cloudheadbandinsweetlikehoney.jpg?v=1711496937&width=800", product_id: 28},
+  {url: "https://www.emijay.com/cdn/shop/files/ponytailholdersetof4inbabyrosette.jpg?v=1711749119&width=800", product_id: 29},
+  {url: "https://www.emijay.com/cdn/shop/files/sweetlikehoneysocialsharingimage.jpg?v=1711993265&width=800", product_id: 29},
+  {url: "https://www.emijay.com/cdn/shop/files/bobblehairtieincitrusflower.jpg?v=1692131268&width=800", product_id: 30},
+  {url: "https://www.emijay.com/cdn/shop/products/sweetheartclipinblueangelwings.jpg?v=1677884121&width=800", product_id: 31},
+  {url: "https://coucousuzette.com/cdn/shop/products/5002.jpg?v=1693407734&width=1346", product_id: 32},
+  {url: "https://coucousuzette.com/cdn/shop/products/4996.jpg?v=1693407650&width=1346", product_id: 33},
+  {url: "https://coucousuzette.com/cdn/shop/products/5003.jpg?v=1693407674&width=1346", product_id: 34}
 ])
 
 Category.create!([
@@ -73,5 +116,46 @@ Category.create!([
   {name: "Headbands"},
   {name: "Hair ties"},
   {name: "Claw clips"}
+])
+
+Categoryproduct.create!([
+  {product_id: 1, category_id: 7},
+  {product_id: 1, category_id: 2},
+  {product_id: 2, category_id: 3},
+  {product_id: 3, category_id: 1},
+  {product_id: 4, category_id: 1},
+  {product_id: 5, category_id: 3},
+  {product_id: 5, category_id: 4},
+  {product_id: 6, category_id: 1},
+  {product_id: 7, category_id: 3},
+  {product_id: 7, category_id: 5},
+  {product_id: 8, category_id: 5},
+  {product_id: 8, category_id: 3},
+  {product_id: 9, category_id: 4},
+  {product_id: 9, category_id: 3},
+  {product_id: 10, category_id: 2},
+  {product_id: 11, category_id: 1},
+  {product_id: 12, category_id: 7},
+  {product_id: 13, category_id: 1},
+  {product_id: 14, category_id: 1},
+  {product_id: 15, category_id: 4},
+  {product_id: 15, category_id: 3},
+  {product_id: 16, category_id: 1},
+  {product_id: 19, category_id: 6},
+  {product_id: 20, category_id: 2},
+  {product_id: 21, category_id: 2},
+  {product_id: 22, category_id: 3},
+  {product_id: 23, category_id: 1},
+  {product_id: 24, category_id: 7},
+  {product_id: 25, category_id: 1},
+  {product_id: 26, category_id: 5},
+  {product_id: 27, category_id: 1},
+  {product_id: 28, category_id: 6},
+  {product_id: 29, category_id: 7},
+  {product_id: 30, category_id: 7},
+  {product_id: 31, category_id: 1},
+  {product_id: 32, category_id: 1},
+  {product_id: 33, category_id: 1},
+  {product_id: 34, category_id: 1}
 ])
 
